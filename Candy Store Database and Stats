@@ -1,0 +1,17 @@
+/**Store items: 
+Kit Kat (2.50)
+Hersheys (1.00)
+Gummy Bears (3.00)
+Gum (2.00)
+Reeses (1.75)
+**/
+
+CREATE TABLE candy (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, price INTEGER);
+INSERT INTO candy VALUES (1, "Kit Kat", 4, 2.5);
+INSERT INTO candy VALUES (2, "Hersheys", 8, 1);
+INSERT INTO candy VALUES (3, "Gummy Bears",5, 3);
+INSERT INTO candy VALUES (4, "Gum", 12, 2);
+INSERT INTO candy VALUES (5, "Reeses", 6, 1.75);
+
+SELECT * FROM candy ORDER BY price;
+SELECT SUM(quantity) FROM candy;
